@@ -40,6 +40,6 @@ export const Profile: FC<IProfile> = (
   );
 };
 
-// Profile.propTypes = {
-//   name: PropTypes.string,
-// };
+Profile.propTypes = {
+  name: PropTypes.string.isRequired,
+};
