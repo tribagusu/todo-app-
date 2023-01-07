@@ -1,6 +1,14 @@
 import React, { FC, ReactElement } from 'react';
+import { ThemeProvider, CssBaseline } from '@mui/material';
+import { customTheme } from './theme/customTheme';
+import { Dashboard } from './pages/dashboard/dashboard';
 
 const App: FC = (): ReactElement => {
-  return <h1>Hello</h1>;
+  return (
+    <ThemeProvider theme={customTheme}>
+      <CssBaseline />
+      <Dashboard />
+    </ThemeProvider>
+  );
 };
 export default App;
