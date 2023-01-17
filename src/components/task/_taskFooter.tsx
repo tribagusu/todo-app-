@@ -13,6 +13,8 @@ export const TaskFooter: FC<ITaskFooter> = (
 ): ReactElement => {
   // destructure
   const {
+    id,
+    status,
     onStatusChange = (e) => console.log(e),
     onClick = (e) => console.log(e),
   } = props;
@@ -45,6 +47,8 @@ export const TaskFooter: FC<ITaskFooter> = (
 };
 
 TaskFooter.propTypes = {
+  id: PropTypes.string.isRequired,
+  status: PropTypes.string,
   onStatusChange: PropTypes.func,
   onClick: PropTypes.func,
 };
