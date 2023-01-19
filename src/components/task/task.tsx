@@ -58,5 +58,5 @@ Task.propTypes = {
   onClick: PropTypes.func,
   priority: PropTypes.string,
   status: PropTypes.string,
-  id: PropTypes.string.isRequired,
+  // id: PropTypes.string.isRequired,
 };

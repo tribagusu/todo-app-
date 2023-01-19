@@ -16,7 +16,11 @@
     "sourceType": "module"
   },
   "plugins": ["react", "@typescript-eslint", "prettier"],
-  "rules": {},
+  "rules": {
+    // "no-empty-function": 0,
+    "@typescript-eslint/no-empty-function": "allow",
+    "@typescript-eslint/ban-ts-comment": "off"
+  },
   "settings": {
     "import/resolver": {
       "typescript": {}
