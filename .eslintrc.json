@@ -17,8 +17,8 @@
   },
   "plugins": ["react", "@typescript-eslint", "prettier"],
   "rules": {
-    // "no-empty-function": 0,
-    "@typescript-eslint/no-empty-function": "allow",
+    "no-empty-function": "off",
+    "@typescript-eslint/no-empty-function": "off",
     "@typescript-eslint/ban-ts-comment": "off"
   },
   "settings": {
